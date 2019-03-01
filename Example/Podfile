@@ -1,0 +1,8 @@
+use_frameworks!
+
+target 'SwiftCalendar_Example' do
+  pod 'SwiftCalendar', :path => '../'
+  pod 'LunarCore', :git => 'https://github.com/hw-1/LunarCore.git'
+  pod 'FSCalendar', :git => 'https://github.com/hw-1/FSCalendar.git'
+
+end

@@ -1,0 +1,43 @@
+PODS:
+  - FSCalendar (2.8.0)
+  - LunarCore (0.1.4)
+  - SnapKit (4.0.1)
+  - SwiftCalendar (0.1.0):
+    - FSCalendar
+    - LunarCore
+    - SnapKit (~> 4.0.0)
+
+DEPENDENCIES:
+  - FSCalendar (from `https://github.com/hw-1/FSCalendar.git`)
+  - LunarCore (from `https://github.com/hw-1/LunarCore.git`)
+  - SwiftCalendar (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SnapKit
+
+EXTERNAL SOURCES:
+  FSCalendar:
+    :git: https://github.com/hw-1/FSCalendar.git
+  LunarCore:
+    :git: https://github.com/hw-1/LunarCore.git
+  SwiftCalendar:
+    :path: "../"
+
+CHECKOUT OPTIONS:
+  FSCalendar:
+    :commit: f0ee25edf48651338bbd35c62b48fe29587c318c
+    :git: https://github.com/hw-1/FSCalendar.git
+  LunarCore:
+    :commit: cd999479aed9e6f0afe8e0e69cd0cefcd781f820
+    :git: https://github.com/hw-1/LunarCore.git
+
+SPEC CHECKSUMS:
+  FSCalendar: 3a5ed3636e2ba1b83ebebfcf0c2603105a6f5efe
+  LunarCore: 70d7afb04d5301f4e698ff050a92623c1f81b3f5
+  SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
+  SwiftCalendar: 9dcdfbd5cc5dad4df3e4781f0f0a263c19c81cc6
+
+PODFILE CHECKSUM: 8ddc1d4c1bb1e9c2a1bb69dacbb5e199cd3266ad
+
+COCOAPODS: 1.5.3

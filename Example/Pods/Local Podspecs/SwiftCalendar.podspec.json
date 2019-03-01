@@ -1,0 +1,33 @@
+{
+  "name": "SwiftCalendar",
+  "version": "0.1.0",
+  "summary": "A short description of SwiftCalendar.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/git/SwiftCalendar",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "git": "git@users.noreply.github.com"
+  },
+  "source": {
+    "git": "https://github.com/git/SwiftCalendar.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "SwiftCalendar/Classes/**/*",
+  "dependencies": {
+    "SnapKit": [
+      "~> 4.0.0"
+    ],
+    "FSCalendar": [
+
+    ],
+    "LunarCore": [
+
+    ]
+  }
+}
