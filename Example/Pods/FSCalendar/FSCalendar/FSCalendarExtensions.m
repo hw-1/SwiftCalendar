@@ -171,7 +171,7 @@
     components.day = - (weekdayComponents.weekday - self.firstWeekday);
     components.day = (components.day-7) % 7;
     NSDate *firstDayOfWeek = [self dateByAddingComponents:components toDate:week options:0];
-    firstDayOfWeek = [self dateBySettingHour:0 minute:0 second:0 ofDate:firstDayOfWeek options:0];
+//    firstDayOfWeek = [self dateBySettingHour:0 minute:0 second:0 ofDate:firstDayOfWeek options:0];
     components.day = NSIntegerMax;
     return firstDayOfWeek;
 }

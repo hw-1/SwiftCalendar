@@ -282,6 +282,7 @@
 
 - (void)reloadSections
 {
+    NSLog(@"%@",[self.gregorian fs_firstDayOfWeek:self.minimumDate]);
     self.numberOfMonths = [self.gregorian components:NSCalendarUnitMonth fromDate:[self.gregorian fs_firstDayOfMonth:self.minimumDate] toDate:self.maximumDate options:0].month+1;
     self.numberOfWeeks = [self.gregorian components:NSCalendarUnitWeekOfYear fromDate:[self.gregorian fs_firstDayOfWeek:self.minimumDate] toDate:self.maximumDate options:0].weekOfYear+1;
     [self clearCaches];

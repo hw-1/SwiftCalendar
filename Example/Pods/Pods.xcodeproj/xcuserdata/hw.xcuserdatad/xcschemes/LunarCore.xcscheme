@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "534AFE296BB01E7D3E452DADA97B4EF2"
+               BlueprintIdentifier = "0189A7ADC7E4467BE0D03BE20B26C7E4"
+               BuildableName = "LunarCore.framework"
                BlueprintName = "LunarCore"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "LunarCore.framework">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

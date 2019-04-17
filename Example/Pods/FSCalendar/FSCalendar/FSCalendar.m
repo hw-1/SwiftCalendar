@@ -161,7 +161,7 @@ typedef NS_ENUM(NSUInteger, FSCalendarOrientation) {
     _currentPage = [self.gregorian fs_firstDayOfMonth:_today];
     
     
-    _minimumDate = [self.formatter dateFromString:@"1970-01-01"];
+    _minimumDate = [self.formatter dateFromString:@"1900-01-01"];
     _maximumDate = [self.formatter dateFromString:@"2099-12-31"];
     
     _headerHeight     = FSCalendarAutomaticDimension;
@@ -719,7 +719,7 @@ typedef NS_ENUM(NSUInteger, FSCalendarOrientation) {
 {
     [self requestBoundingDatesIfNecessary];
     if (self.floatingMode || [self isDateInDifferentPage:currentPage]) {
-        currentPage = [self.gregorian dateBySettingHour:0 minute:0 second:0 ofDate:currentPage options:0];
+       // currentPage = [self.gregorian dateBySettingHour:0 minute:0 second:0 ofDate:currentPage options:0];
         if ([self isPageInRange:currentPage]) {
             [self scrollToPageForDate:currentPage animated:animated];
         }
@@ -1060,7 +1060,7 @@ typedef NS_ENUM(NSUInteger, FSCalendarOrientation) {
     
     FSCalendarAssertDateInBounds(date,self.gregorian,self.minimumDate,self.maximumDate);
     
-    NSDate *targetDate = [self.gregorian dateBySettingHour:0 minute:0 second:0 ofDate:date options:0];
+    NSDate *targetDate = date ;//[self.gregorian dateBySettingHour:0 minute:0 second:0 ofDate:date options:0];
     NSIndexPath *targetIndexPath = [self.calculator indexPathForDate:targetDate];
     
     BOOL shouldSelect = YES;
@@ -1534,9 +1534,9 @@ typedef NS_ENUM(NSUInteger, FSCalendarOrientation) {
         _needsRequestingBoundingDates = NO;
         self.formatter.dateFormat = @"yyyy-MM-dd";
         NSDate *newMin = [self.dataSourceProxy minimumDateForCalendar:self]?:[self.formatter dateFromString:@"1970-01-01"];
-        newMin = [self.gregorian dateBySettingHour:0 minute:0 second:0 ofDate:newMin options:0];
+//        newMin = [self.gregorian dateBySettingHour:0 minute:0 second:0 ofDate:newMin options:0];
         NSDate *newMax = [self.dataSourceProxy maximumDateForCalendar:self]?:[self.formatter dateFromString:@"2099-12-31"];
-        newMax = [self.gregorian dateBySettingHour:0 minute:0 second:0 ofDate:newMax options:0];
+//        newMax = [self.gregorian dateBySettingHour:0 minute:0 second:0 ofDate:newMax options:0];
         
         NSAssert([self.gregorian compareDate:newMin toDate:newMax toUnitGranularity:NSCalendarUnitDay] != NSOrderedDescending, @"The minimum date of calendar should be earlier than the maximum.");
         

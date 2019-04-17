@@ -168,21 +168,21 @@
 
 - (void)performSelecting
 {
-    _shapeLayer.opacity = 1;
-        
-    CAAnimationGroup *group = [CAAnimationGroup animation];
-    CABasicAnimation *zoomOut = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
-    zoomOut.fromValue = @0.3;
-    zoomOut.toValue = @1.2;
-    zoomOut.duration = FSCalendarDefaultBounceAnimationDuration/4*3;
-    CABasicAnimation *zoomIn = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
-    zoomIn.fromValue = @1.2;
-    zoomIn.toValue = @1.0;
-    zoomIn.beginTime = FSCalendarDefaultBounceAnimationDuration/4*3;
-    zoomIn.duration = FSCalendarDefaultBounceAnimationDuration/4;
-    group.duration = FSCalendarDefaultBounceAnimationDuration;
-    group.animations = @[zoomOut, zoomIn];
-    [_shapeLayer addAnimation:group forKey:@"bounce"];
+//    _shapeLayer.opacity = 1;
+//
+//    CAAnimationGroup *group = [CAAnimationGroup animation];
+//    CABasicAnimation *zoomOut = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
+//    zoomOut.fromValue = @0.3;
+//    zoomOut.toValue = @1.2;
+//    zoomOut.duration = FSCalendarDefaultBounceAnimationDuration/4*3;
+//    CABasicAnimation *zoomIn = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
+//    zoomIn.fromValue = @1.2;
+//    zoomIn.toValue = @1.0;
+//    zoomIn.beginTime = FSCalendarDefaultBounceAnimationDuration/4*3;
+//    zoomIn.duration = FSCalendarDefaultBounceAnimationDuration/4;
+//    group.duration = FSCalendarDefaultBounceAnimationDuration;
+//    group.animations = @[zoomOut, zoomIn];
+//    [_shapeLayer addAnimation:group forKey:@"bounce"];
     [self configureAppearance];
     
 }

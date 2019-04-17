@@ -192,7 +192,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftCalendar_Example/Pods-SwiftCalendar_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftCalendar_Example/Pods-SwiftCalendar_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework",
 				"${BUILT_PRODUCTS_DIR}/LunarCore/LunarCore.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
@@ -209,7 +209,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftCalendar_Example/Pods-SwiftCalendar_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftCalendar_Example/Pods-SwiftCalendar_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EDE7046125BF396B95C2A2F6 /* [CP] Check Pods Manifest.lock */ = {
